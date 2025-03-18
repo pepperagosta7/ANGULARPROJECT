@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif; /* Imposta il font principale della pagina */
+    margin: 0; /* Rimuove il margine predefinito del body */
+    padding: 0; /* Rimuove il padding predefinito del body */
+    background-color: #ebe5da; /* Imposta il colore di sfondo della pagina */
+}
+.top-bar {
+    background: #333; /* Colore di sfondo della barra superiore */
+    color: white; /* Colore del testo nella barra superiore */
+    text-align: center; /* Allinea il testo al centro */
+    padding: 10px; /* Aggiunge padding interno alla barra */
+}
+.top-bar button {
+    background: #4CAF50; /* Colore di sfondo del pulsante */
+    color: white; /* Colore del testo del pulsante */
+    border: none; /* Rimuove il bordo del pulsante */
+    padding: 5px 10px; /* Aggiunge padding interno al pulsante */
+    cursor: pointer; /* Cambia il cursore in una mano quando si passa sopra */
+}
+.logo-nav {
+    display: flex; /* Usa il layout flexbox */
+    justify-content: space-between; /* Spazia gli elementi ai lati opposti */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+    background: white; /* Colore di sfondo della sezione */
+    padding: 10px; /* Aggiunge padding interno */
+}
+.logo-nav .logo-img {
+    width: 230px; /* Imposta la larghezza dell'immagine del logo */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+nav ul {
+    list-style: none; /* Rimuove i punti elenco */
+    display: flex; /* Usa il layout flexbox */
+    gap: 15px; /* Spaziatura tra gli elementi della lista */
+}
+nav a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: black; /* Colore del testo dei link */
+    font-weight: bold; /* Imposta il testo in grassetto */
+}
+.hero {
+    display: flex; /* Usa il layout flexbox */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+    justify-content: center; /* Allinea gli elementi orizzontalmente al centro */
+    gap: 20px; /* Spaziatura tra gli elementi */
+    padding: 50px; /* Aggiunge padding interno */
+    background: #f8f3eb; /* Colore di sfondo della sezione */
+}
+.hero .hero-img {
+    width: 120px; /* Imposta la larghezza dell'immagine dell'eroe */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+.filters {
+    text-align: center; /* Allinea il contenuto al centro */
+    padding: 20px; /* Aggiunge padding interno */
+}
+.filters button {
+    margin: 5px; /* Aggiunge margine esterno tra i pulsanti */
+    padding: 10px; /* Aggiunge padding interno ai pulsanti */
+    border: none; /* Rimuove il bordo dei pulsanti */
+    background: #ddd; /* Colore di sfondo dei pulsanti */
+    cursor: pointer; /* Cambia il cursore in una mano quando si passa sopra */
+}
+.gallery {
+    display: flex; /* Usa il layout flexbox */
+    justify-content: center; /* Allinea gli elementi orizzontalmente al centro */
+    gap: 20px; /* Spaziatura tra gli elementi */
+    padding: 20px; /* Aggiunge padding interno */
+}
+.gallery .gallery-img {
+    width: 200px; /* Imposta la larghezza delle immagini della galleria */
+    height: auto; /* Mantiene le proporzioni delle immagini */
+    border-radius: 5px; /* Arrotonda gli angoli delle immagini */
+}
+.item {
+    background: white; /* Colore di sfondo degli elementi */
+    padding: 15px; /* Aggiunge padding interno */
+    border-radius: 5px; /* Arrotonda gli angoli degli elementi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra agli elementi */
+    text-align: center; /* Allinea il contenuto al centro */
+}
+.item img {
+    width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    border-radius: 5px; /* Arrotonda gli angoli dell'immagine */
+}
