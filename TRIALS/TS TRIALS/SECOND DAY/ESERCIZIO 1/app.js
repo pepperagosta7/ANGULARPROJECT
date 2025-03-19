@@ -39,4 +39,5 @@ formElement.addEventListener('submit', (event) => {
         userDataElement.textContent = 'Errore: Compila tutti i campi!';
         userDataElement.style.color = 'red';
     }
+    formElement.reset(); // Resetta i campi del form
 });
