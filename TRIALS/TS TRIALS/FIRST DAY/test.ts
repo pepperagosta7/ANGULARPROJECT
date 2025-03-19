@@ -12,8 +12,11 @@ function analizzaNumeri(numeri: number[]): void{
         } else if (numeri[i] === 0){
             contaZero++;
         }
-        else{
+        else if (numeri[i] % 2 !== 0){
             contaDispari++;
+        }
+        else{
+            console.log("Errore");
         }
     }
 

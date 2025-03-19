@@ -13,8 +13,11 @@ function analizzaNumeri(numeri) {
         else if (numeri[i] === 0) {
             contaZero++;
         }
-        else {
+        else if (numeri[i] % 2 !== 0) {
             contaDispari++;
+        }
+        else {
+            console.log("Errore");
         }
     }
     console.log("Somma dei numeri positivi: " + sommaPositivi);
