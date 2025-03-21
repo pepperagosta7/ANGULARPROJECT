@@ -1,0 +1,107 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: white;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Sezioni */
+section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+/* Esperienza e Progetti */
+.job, .project {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #007BFF;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Contatti */
+#contact p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
