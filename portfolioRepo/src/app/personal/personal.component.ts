@@ -13,6 +13,12 @@ export class PersonalComponent implements AfterViewInit {
 
   experiences = [
     {
+      role: "Full-stack Developer",
+      company: "ITConsulting s.r.l.",
+      duration: "17/02/2025 – 28/03/2025",
+      description: "Academy finanziata da Forma.Temp e realizzata in collaborazione con GiGroup APL. Programma del corso: SQL, Spring Boot, Angular, Node.js, e integrazione di Java e SQL."
+    },
+    {
       role: "Infotainement Quality Software Engineer",
       company: "DaVinci Engineering GmbH",
       duration: "01/09/2022 – 31/08/2024",
@@ -23,12 +29,6 @@ export class PersonalComponent implements AfterViewInit {
       company: "I.T. Svil srl",
       duration: "05/2022 – 08/2022",
       description: "Tirocinio universitario in programmazione back-end. Sviluppo, test e debugging di microservizi con Java EE, Spring Boot, JPA, Hibernate, Maven, PostgreSQL, Docker, Jenkins e GitLab. Framework Agile: SCRUM."
-    },
-    {
-      role: "Full-stack Developer",
-      company: "ITConsulting s.r.l.",
-      duration: "17/02/2025 – 28/03/2025",
-      description: "Academy finanziata da Forma.Temp e realizzata in collaborazione con GiGroup APL. Programma del corso: SQL, Spring Boot, Angular, Node.js, e integrazione di Java e SQL."
     }
   ];
 
