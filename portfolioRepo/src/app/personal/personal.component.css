@@ -4,53 +4,62 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: #121212; /* Sfondo scuro */
-    color: #e0e0e0; /* Testo chiaro */
+    background-color: #1e1e2f; /* Sfondo principale */
+    color: #e0e0e0; /* Testo principale */
     line-height: 1.6;
 }
 
 /* Header */
 header {
     text-align: center;
-    background: linear-gradient(135deg, #1e3a8a, #1e40af); /* Blu scuro */
+    background: linear-gradient(135deg, #0f766e, #14b8a6); /* Gradiente verde acqua */
     color: white;
-    padding: 60px 20px;
-    /* Rimosso il border-radius */
+    padding: 80px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
+    color: #14b8a6; /* Verde acqua */
 }
 
 header p {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 15px 0;
+    color: #94a3b8; /* Testo grigio chiaro */
 }
 
+/* Titoli */
+h1, h2 {
+    color: #14b8a6; /* Verde acqua */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra per risalto */
+}
+
+/* Pulsanti */
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
-    background: #1e40af; /* Blu scuro */
+    padding: 15px 30px;
+    background: #14b8a6; /* Blu acceso */
     color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 10px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background: #2a2a3b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombra per far risaltare il testo */
 }
 
 .btn:hover {
-    background: #2563eb; /* Blu più chiaro */
+    background: #0f766e; /* Verde acqua più scuro */
     transform: translateY(-3px);
 }
 
 /* Navbar */
 nav {
-    background: #1e1e1e; /* Grigio molto scuro */
+    background: #2a2a3b; /* Grigio medio */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -64,40 +73,29 @@ nav ul {
     justify-content: center;
     padding: 0;
     margin: 0;
-    gap: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #e0e0e0; /* Testo chiaro */
+    color: #e0e0e0; /* Testo principale */
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombra per far risaltare il testo */
 }
 
 nav ul li a:hover {
-    background: #2563eb; /* Blu più chiaro */
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-nav ul li a.active {
-    background: #1e40af; /* Blu scuro */
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: #14b8a6; /* Blu acceso */
 }
 
 /* Sezioni */
 section {
     padding: 60px 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto;
-    background: #1e1e1e; /* Grigio molto scuro */
+    background: #2a2a3b; /* Grigio medio */
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
@@ -107,19 +105,19 @@ section:hover {
     transform: translateY(-5px);
 }
 
+/* Titoli delle sezioni */
 h2 {
     text-align: center;
-    color: #2563eb; /* Blu più chiaro */
     margin-bottom: 30px;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
 /* Esperienza e Progetti */
 .job, .project {
-    background: #2a2a2a; /* Grigio scuro */
+    background: #2a2a3b; /* Grigio scuro */
     padding: 20px;
-    border-left: 5px solid #2563eb; /* Blu più chiaro */
+    border-left: 5px solid #14b8a6; /* Verde acqua */
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -133,14 +131,15 @@ h2 {
 
 .job h3, .project h3 {
     margin: 0 0 10px;
-    color: #2563eb; /* Blu più chiaro */
-    font-size: 1.5em;
+    color: #14b8a6; /* Verde acqua */
+    font-size: 1.8em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombra per far risaltare il testo */
 }
 
 .job p, .project p {
     margin: 5px 0;
     line-height: 1.6;
-    color: #e0e0e0; /* Testo chiaro */
+    color: #ffffff; /* Testo grigio chiaro */
 }
 
 /* Competenze e Lingue */
@@ -152,7 +151,7 @@ ul {
 ul li {
     margin: 10px 0;
     padding: 12px;
-    background: #2a2a2a; /* Grigio scuro */
+    background: #2a2a3b; /* Grigio scuro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
@@ -173,13 +172,14 @@ ul li:hover {
 }
 
 #contact p a {
-    color: #2563eb; /* Blu più chiaro */
+    color: #14b8a6; /* Blu acceso */
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombra per far risaltare il testo */
 }
 
 #contact p a:hover {
-    color: #1e40af; /* Blu scuro */
+    color: #0f766e; /* Verde acqua più scuro */
     text-decoration: underline;
 }
 
@@ -190,29 +190,62 @@ ul li:hover {
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Ingrandisci la larghezza */
+    height: 200px; /* Ingrandisci l'altezza */
     border-radius: 50%;
-    border: 5px solid #1e1e1e; /* Grigio molto scuro */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 5px solid #1e1e2f; /* Grigio scuro */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Ombra più marcata */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .profile-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1); /* Effetto di ingrandimento al passaggio del mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Ombra più evidente */
 }
-
 .profile-container h1 {
     margin: 15px 0 5px;
-    font-size: 2.5em;
-    color: white;
+    font-size: 3em; /* Aumenta la dimensione del font */
+    color: #e0e0e0;; /* Verde acqua per far risaltare il nome */
+    font-weight: bold; /* Rendi il testo più marcato */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Ombra più evidente */
 }
 
 .profile-container p {
-    font-size: 1.2em;
-    color: #e0e0e0; /* Testo chiaro */
+    font-size: 1.8em; /* Aumenta la dimensione del font */
+    color: #ffffff; /* Cambia il colore del testo in bianco */
+    font-weight: bold; /* Rendi il testo più marcato */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Aggiungi un'ombra al testo */
     margin-bottom: 15px;
+}
+/* Stile per il footer */
+footer {
+    background: #1e1e2f; /* Sfondo scuro */
+    color: #e0e0e0; /* Testo chiaro */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #14b8a6; /* Bordo superiore verde acqua */
+}
+
+footer h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #14b8a6; /* Verde acqua */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #14b8a6; /* Verde acqua */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #0f766e; /* Verde acqua più scuro */
 }
 
 /* Media Queries */

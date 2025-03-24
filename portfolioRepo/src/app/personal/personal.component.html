@@ -12,7 +12,7 @@
             <img src="assets/imageF.jpg" alt="Foto di Giuseppe Ragosta" class="profile-img">
             <h1>Giuseppe Ragosta</h1>
             <p>Software Developer</p>
-            <a href="GiuseppeRagosta_CV.pdf" class="btn">Scarica il CV</a>
+            <a href="assets/GiuseppeRagostaCV.pdf" class="btn" download>Scarica il CV</a>
         </div>
     </header>
     
@@ -29,7 +29,7 @@
     
     <section id="about">
         <h2>Chi Sono</h2>
-        <p>{{ aboutMe }}</p>
+        <p class="job">{{ aboutMe }}</p>
     </section>
     
     <section id="experience">
@@ -43,7 +43,7 @@
     
     <section id="education">
         <h2>Istruzione e Formazione</h2>
-        <div *ngFor="let edu of education">
+        <div *ngFor="let edu of education" class="job">
             <p><strong>{{ edu.degree }}</strong> - {{ edu.institution }} ({{ edu.year }})</p>
         </div>
     </section>
@@ -51,21 +51,23 @@
     <section id="skills">
         <h2>Competenze Tecniche</h2>
         <ul>
-            <li *ngFor="let skill of skills">{{ skill }}</li>
+            <li *ngFor="let skill of skills" class="job">{{ skill }}</li>
         </ul>
     </section>
     
     <section id="languages">
         <h2>Lingue</h2>
         <ul>
-            <li *ngFor="let language of languages">{{ language.name }} - {{ language.level }}</li>
+            <li *ngFor="let language of languages" class="job">{{ language.name }} - {{ language.level }}</li>
         </ul>
     </section>
     
-    <section id="contact">
+    <footer id="contact">
         <h2>Contatti</h2>
-        <p>Email: {{ contactInfo.email }}</p>
-        <p>Telefono: {{ contactInfo.phone }}</p>
-    </section>
+        <p><strong>Email:</strong> {{ contactInfo.email }}</p>
+        <p><strong>Telefono:</strong> {{ contactInfo.phone }}</p>
+        <p><strong>LinkedIn:</strong> <a href="{{ contactInfo.linkedin }}" target="_blank">{{ contactInfo.linkedin }}</a></p>
+        <p><strong>GitHub:</strong> <a href="{{ contactInfo.github }}" target="_blank">{{ contactInfo.github }}</a></p>
+    </footer>
 </body>
 </html>
